@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade</title>
+    <title>Política de Privacidade - Sollaris Energia</title>
+    <meta name="description" content="Política de Privacidade da Sollaris Energia - Transparência no tratamento de dados pessoais">
     <style>
         * {
             margin: 0;
@@ -13,39 +14,28 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.7;
+            color: #2c3e50;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
             overflow: hidden;
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         .header {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
             color: white;
-            padding: 40px;
+            padding: 50px 40px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -59,7 +49,7 @@
             width: 200%;
             height: 200%;
             background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
+            animation: rotate 25s linear infinite;
         }
 
         @keyframes rotate {
@@ -68,81 +58,100 @@
         }
 
         .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
             position: relative;
             z-index: 1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
-        .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+        .header .company-info {
+            font-size: 1.2rem;
+            opacity: 0.95;
             position: relative;
             z-index: 1;
+            margin-top: 10px;
         }
 
         .content {
-            padding: 40px;
+            padding: 50px;
+        }
+
+        .last-updated {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
         }
 
         .section {
-            margin-bottom: 30px;
-            padding: 25px;
-            background: rgba(248, 250, 252, 0.8);
+            margin-bottom: 35px;
+            padding: 30px;
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
             border-radius: 15px;
-            border-left: 4px solid #4facfe;
+            border-left: 5px solid #f39c12;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
         }
 
         .section:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
         .section h2 {
-            color: #2d3748;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e2e8f0;
+            color: #2c3e50;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f39c12;
+            position: relative;
         }
 
         .section h3 {
-            color: #4a5568;
-            font-size: 1.2rem;
-            margin: 20px 0 10px 0;
+            color: #34495e;
+            font-size: 1.3rem;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
         }
 
         .section p {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             text-align: justify;
+            font-size: 1.05rem;
         }
 
         .section ul {
-            margin: 15px 0 15px 20px;
+            margin: 20px 0 20px 25px;
         }
 
         .section li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             position: relative;
+            font-size: 1.05rem;
         }
 
         .section li::before {
-            content: "→";
-            color: #4facfe;
+            content: "⚡";
+            color: #f39c12;
             font-weight: bold;
             position: absolute;
-            left: -20px;
+            left: -25px;
         }
 
         .highlight {
-            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border: none;
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 10px 30px rgba(243, 156, 18, 0.3);
         }
 
         .highlight::before {
@@ -151,72 +160,99 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
-            background-size: 400% 400%;
-            animation: gradientShift 3s ease infinite;
+            height: 4px;
+            background: linear-gradient(90deg, #fff, #f1c40f, #fff);
+            background-size: 200% 200%;
+            animation: shine 2s ease-in-out infinite;
         }
 
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+        @keyframes shine {
+            0%, 100% { background-position: 200% 0; }
+            50% { background-position: -200% 0; }
         }
 
-        .contact-info {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .contact-card {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(44, 62, 80, 0.3);
+        }
+
+        .contact-card h3 {
+            color: white !important;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .contact-card .contact-item {
+            margin: 12px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .facebook-requirements {
+            background: linear-gradient(135deg, #4267b2 0%, #365899 100%);
             color: white;
             padding: 30px;
             border-radius: 15px;
-            margin-top: 20px;
-            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 12px 30px rgba(66, 103, 178, 0.3);
         }
 
-        .contact-info h3 {
+        .facebook-requirements h3 {
             color: white !important;
-            margin-bottom: 15px;
-        }
-
-        .toc {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border: 1px solid #e2e8f0;
-        }
-
-        .toc h3 {
-            color: #2d3748;
-            margin-bottom: 15px;
-        }
-
-        .toc a {
-            color: #4facfe;
-            text-decoration: none;
-            display: block;
-            padding: 5px 0;
-            transition: color 0.3s ease;
-        }
-
-        .toc a:hover {
-            color: #2d3748;
-            text-decoration: underline;
-        }
-
-        .last-updated {
-            background: #e2e8f0;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: bold;
-            color: #4a5568;
             margin-bottom: 20px;
         }
 
-        .footer {
-            background: #2d3748;
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .data-table th {
+            background: #f39c12;
             color: white;
-            padding: 30px;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
             text-align: center;
+        }
+
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, #f39c12, #e67e22);
+            z-index: 1000;
+            transition: width 0.1s ease;
         }
 
         @media (max-width: 768px) {
@@ -230,325 +266,353 @@
             }
             
             .header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .content {
-                padding: 20px;
+                padding: 30px 25px;
             }
             
             .section {
-                padding: 20px;
+                padding: 25px 20px;
             }
-        }
 
-        .scroll-indicator {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 4px;
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
-            z-index: 1000;
-            transition: width 0.1s ease;
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="scroll-indicator" id="scrollIndicator"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
     
     <div class="container">
         <div class="header">
             <h1>Política de Privacidade</h1>
-            <p>Transparência e proteção dos seus dados pessoais</p>
+            <div class="company-info">
+                <strong>Sollaris Energia</strong><br>
+                Soluções em Energia Solar
+            </div>
         </div>
 
         <div class="content">
             <div class="last-updated">
-                <strong>Última atualização:</strong> [Data da última atualização]
+                <strong>Última atualização:</strong> 21 de agosto de 2025
             </div>
 
-            <div class="toc">
-                <h3>Índice</h3>
-                <a href="#section1">1. Informações Gerais</a>
-                <a href="#section2">2. Informações que Coletamos</a>
-                <a href="#section3">3. Como Utilizamos Suas Informações</a>
-                <a href="#section4">4. Base Legal para Tratamento</a>
-                <a href="#section5">5. Compartilhamento de Informações</a>
-                <a href="#section6">6. Cookies e Tecnologias</a>
-                <a href="#section7">7. Segurança dos Dados</a>
-                <a href="#section8">8. Retenção de Dados</a>
-                <a href="#section9">9. Seus Direitos</a>
-                <a href="#section10">10. Dados de Menores</a>
-                <a href="#section11">11. Transferência Internacional</a>
-                <a href="#section12">12. Alterações na Política</a>
-                <a href="#section13">13. Encarregado de Dados</a>
-                <a href="#section14">14. Autoridade de Proteção</a>
-                <a href="#section15">15. Contato</a>
+            <div class="facebook-requirements">
+                <h3>📱 Integração com Facebook e Meta</h3>
+                <p>Esta política foi especificamente elaborada para atender aos requisitos do <strong>Facebook for Developers</strong> e integração com plataformas de automação como <strong>n8n</strong>. Todos os dados coletados através das APIs do Facebook são tratados conforme as diretrizes da Meta e a LGPD brasileira.</p>
             </div>
 
-            <div class="section" id="section1">
-                <h2>1. Informações Gerais</h2>
-                <p>Esta Política de Privacidade descreve como <strong>[NOME DA EMPRESA/APLICATIVO]</strong> ("nós", "nosso" ou "empresa") coleta, usa, armazena e protege suas informações pessoais quando você utiliza nosso site <strong>[URL DO SITE]</strong> e/ou aplicativo móvel (coletivamente, os "Serviços").</p>
+            <div class="section">
+                <h2>1. Informações da Empresa</h2>
+                <p>A <strong>Sollaris Energia</strong> ("nós", "nossa" ou "empresa") é uma empresa brasileira especializada em soluções de energia solar, com sede em Ananindeua, Pará.</p>
                 
-                <div class="highlight">
-                    <p><strong>Importante:</strong> Ao utilizar nossos Serviços, você concorda com a coleta e uso de informações de acordo com esta política. Esta Política de Privacidade está em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+                <div class="contact-card">
+                    <h3>Dados da Empresa</h3>
+                    <div class="contact-item"><strong>Razão Social:</strong> Sollaris Energia</div>
+                    <div class="contact-item"><strong>CNPJ:</strong> 51.083.793/0001-90</div>
+                    <div class="contact-item"><strong>Endereço:</strong> Av. Gov. Hélio Gueiros, 6060 - Coqueiro, Ananindeua - PA, 67120-370</div>
+                    <div class="contact-item"><strong>Telefone:</strong> +55 91 9213-2545</div>
+                    <div class="contact-item"><strong>E-mail:</strong> Sollarisengaut@gmail.com</div>
+                    <div class="contact-item"><strong>Website:</strong> Sollarisenergia.com.br</div>
                 </div>
             </div>
 
-            <div class="section" id="section2">
-                <h2>2. Informações que Coletamos</h2>
+            <div class="section">
+                <h2>2. Escopo desta Política</h2>
+                <p>Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais quando você:</p>
                 
-                <h3>2.1 Informações Fornecidas Diretamente por Você</h3>
                 <ul>
-                    <li><strong>Dados de cadastro:</strong> nome, e-mail, telefone, endereço</li>
-                    <li><strong>Dados de perfil:</strong> foto, preferências, configurações da conta</li>
-                    <li><strong>Informações de contato:</strong> mensagens enviadas através de formulários</li>
-                    <li><strong>Dados de pagamento:</strong> informações processadas por terceiros seguros</li>
+                    <li>Utiliza nosso aplicativo móvel</li>
+                    <li>Interage com nossos serviços através do Facebook Login</li>
+                    <li>Participa de nossas campanhas de marketing digital</li>
+                    <li>Acessa nosso website e serviços online</li>
                 </ul>
 
-                <h3>2.2 Informações Coletadas Automaticamente</h3>
-                <ul>
-                    <li><strong>Dados de uso:</strong> páginas visitadas, tempo de permanência, interações</li>
-                    <li><strong>Informações do dispositivo:</strong> tipo, sistema operacional, navegador, IP</li>
-                    <li><strong>Dados de localização:</strong> localização aproximada (quando autorizado)</li>
-                    <li><strong>Cookies:</strong> identificadores para melhorar a experiência</li>
-                </ul>
-
-                <h3>2.3 Informações de Terceiros</h3>
-                <ul>
-                    <li><strong>Redes sociais:</strong> conexão com Facebook, Google, etc.</li>
-                    <li><strong>Parceiros comerciais:</strong> informações de parceiros autorizados</li>
-                </ul>
-            </div>
-
-            <div class="section" id="section3">
-                <h2>3. Como Utilizamos Suas Informações</h2>
-                
-                <h3>3.1 Prestação de Serviços</h3>
-                <ul>
-                    <li>Fornecer, operar e manter nossos Serviços</li>
-                    <li>Processar transações e pedidos</li>
-                    <li>Gerenciar sua conta e preferências</li>
-                    <li>Fornecer suporte ao cliente</li>
-                </ul>
-
-                <h3>3.2 Comunicação</h3>
-                <ul>
-                    <li>Enviar atualizações sobre nossos Serviços</li>
-                    <li>Responder às suas solicitações e dúvidas</li>
-                    <li>Enviar newsletters (com seu consentimento)</li>
-                    <li>Notificações importantes sobre mudanças</li>
-                </ul>
-
-                <h3>3.3 Melhoria dos Serviços</h3>
-                <ul>
-                    <li>Analisar o uso para melhorias</li>
-                    <li>Desenvolver novos recursos</li>
-                    <li>Realizar pesquisas de mercado</li>
-                    <li>Personalizar sua experiência</li>
-                </ul>
-            </div>
-
-            <div class="section" id="section4">
-                <h2>4. Base Legal para o Tratamento de Dados</h2>
-                <p>Tratamos seus dados pessoais com base nas seguintes hipóteses legais previstas na LGPD:</p>
-                
                 <div class="highlight">
+                    <p><strong>⚖️ Conformidade Legal:</strong> Esta política está em total conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e as diretrizes de privacidade da Meta/Facebook.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Dados Coletados via Facebook</h2>
+                <p>Quando você utiliza o <strong>Facebook Login</strong> em nossos serviços, coletamos as seguintes informações:</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Dado</th>
+                            <th>Finalidade</th>
+                            <th>Base Legal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Nome e Foto do Perfil</strong></td>
+                            <td>Personalização da experiência do usuário</td>
+                            <td>Consentimento</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Endereço de E-mail</strong></td>
+                            <td>Comunicação e suporte ao cliente</td>
+                            <td>Execução de contrato</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Idade/Data de Nascimento</strong></td>
+                            <td>Verificação de idade e segmentação</td>
+                            <td>Interesse legítimo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Localização</strong></td>
+                            <td>Ofertas regionais de energia solar</td>
+                            <td>Consentimento</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Interesses e Preferências</strong></td>
+                            <td>Marketing personalizado</td>
+                            <td>Consentimento</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>3.1 Permissões Solicitadas</h3>
+                <p>Solicitamos apenas as permissões mínimas necessárias para o funcionamento do nosso aplicativo:</p>
+                <ul>
+                    <li><strong>Perfil público:</strong> Nome, foto e informações básicas</li>
+                    <li><strong>E-mail:</strong> Para comunicação e recuperação de conta</li>
+                    <li><strong>Aniversário:</strong> Para verificação de idade</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Finalidades do Tratamento</h2>
+                
+                <h3>4.1 Prestação de Serviços</h3>
+                <ul>
+                    <li>Autenticação e gerenciamento de conta</li>
+                    <li>Personalização da experiência no aplicativo</li>
+                    <li>Suporte técnico e atendimento ao cliente</li>
+                    <li>Cálculos e simulações de energia solar</li>
+                </ul>
+
+                <h3>4.2 Marketing e Comunicação</h3>
+                <div class="highlight">
+                    <p><strong>📢 Atividades de Marketing:</strong></p>
                     <ul>
-                        <li><strong>Consentimento:</strong> quando você nos autoriza expressamente</li>
-                        <li><strong>Execução de contrato:</strong> para cumprir contratos firmados</li>
-                        <li><strong>Interesse legítimo:</strong> para melhorar serviços e segurança</li>
-                        <li><strong>Cumprimento de obrigação legal:</strong> quando exigido por lei</li>
-                        <li><strong>Exercício de direitos:</strong> em processos judiciais</li>
+                        <li>Campanhas publicitárias personalizadas no Facebook e Instagram</li>
+                        <li>E-mail marketing com conteúdo sobre energia solar</li>
+                        <li>Remarketing para usuários que demonstraram interesse</li>
+                        <li>Análise de audiência para melhoria das campanhas</li>
+                        <li>Criação de públicos similares (lookalike audiences)</li>
+                    </ul>
+                </div>
+
+                <h3>4.3 Integração com n8n</h3>
+                <p>Utilizamos a plataforma <strong>n8n</strong> para automação de processos e integração entre sistemas. Os dados podem ser processados automaticamente para:</p>
+                <ul>
+                    <li>Sincronização de leads entre plataformas</li>
+                    <li>Automação de campanhas de e-mail</li>
+                    <li>Análise e relatórios automatizados</li>
+                    <li>Integração com CRM e ferramentas de vendas</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Compartilhamento com Terceiros</h2>
+                <p>Compartilhamos seus dados apenas quando necessário e com parceiros confiáveis:</p>
+
+                <h3>5.1 Parceiros Tecnológicos</h3>
+                <ul>
+                    <li><strong>Meta/Facebook:</strong> Para funcionalidades de login e marketing</li>
+                    <li><strong>Google Analytics:</strong> Para análise de uso e performance</li>
+                    <li><strong>Google Ads:</strong> Para campanhas publicitárias</li>
+                    <li><strong>n8n Platform:</strong> Para automação e integração de dados</li>
+                </ul>
+
+                <h3>5.2 Garantias de Proteção</h3>
+                <div class="highlight">
+                    <p><strong>🔒 Todos os nossos parceiros:</strong></p>
+                    <ul>
+                        <li>Assinam contratos de proteção de dados</li>
+                        <li>Seguem padrões internacionais de segurança</li>
+                        <li>Utilizam os dados apenas para finalidades autorizadas</li>
+                        <li>Implementam medidas técnicas de proteção</li>
+                    </ul>
+                </div>
+
+                <p><strong>⚠️ Importante:</strong> Nunca vendemos, alugamos ou comercializamos seus dados pessoais.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Segurança e Proteção</h2>
+                
+                <h3>6.1 Medidas Técnicas</h3>
+                <ul>
+                    <li>Criptografia de dados em trânsito (TLS/SSL)</li>
+                    <li>Armazenamento seguro com criptografia</li>
+                    <li>Controles de acesso baseados em função</li>
+                    <li>Monitoramento contínuo de segurança</li>
+                    <li>Backups seguros e regulares</li>
+                </ul>
+
+                <h3>6.2 Medidas Organizacionais</h3>
+                <ul>
+                    <li>Treinamento da equipe em proteção de dados</li>
+                    <li>Políticas internas de segurança</li>
+                    <li>Controle de acesso por colaboradores</li>
+                    <li>Auditoria regular dos processos</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Armazenamento e Retenção</h2>
+                
+                <h3>7.1 Local de Armazenamento</h3>
+                <p>Seus dados são armazenados em servidores localizados no <strong>Brasil</strong>, garantindo conformidade com a legislação nacional.</p>
+
+                <h3>7.2 Períodos de Retenção</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Dado</th>
+                            <th>Período de Retenção</th>
+                            <th>Justificativa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dados de conta ativa</td>
+                            <td>Enquanto a conta existir</td>
+                            <td>Prestação do serviço</td>
+                        </tr>
+                        <tr>
+                            <td>Dados de conta inativa</td>
+                            <td>5 anos após última atividade</td>
+                            <td>Possível reativação</td>
+                        </tr>
+                        <tr>
+                            <td>Dados de marketing</td>
+                            <td>Até revogação do consentimento</td>
+                            <td>Consentimento específico</td>
+                        </tr>
+                        <tr>
+                            <td>Logs de acesso</td>
+                            <td>6 meses</td>
+                            <td>Segurança e auditoria</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>8. Seus Direitos</h2>
+                <p>Conforme a LGPD, você possui os seguintes direitos:</p>
+
+                <h3>8.1 Direitos Básicos</h3>
+                <ul>
+                    <li><strong>Confirmação:</strong> Saber se tratamos seus dados</li>
+                    <li><strong>Acesso:</strong> Obter cópia dos seus dados</li>
+                    <li><strong>Correção:</strong> Corrigir dados incompletos ou incorretos</li>
+                    <li><strong>Anonimização/Eliminação:</strong> Remover dados desnecessários</li>
+                    <li><strong>Portabilidade:</strong> Receber dados em formato estruturado</li>
+                    <li><strong>Informação:</strong> Conhecer terceiros que recebem seus dados</li>
+                    <li><strong>Revogação:</strong> Retirar consentimento a qualquer momento</li>
+                </ul>
+
+                <div class="highlight">
+                    <h3>📞 Como Exercer Seus Direitos</h3>
+                    <p>Para exercer qualquer direito, entre em contato conosco:</p>
+                    <ul>
+                        <li><strong>E-mail:</strong> Sollarisengaut@gmail.com</li>
+                        <li><strong>Telefone:</strong> +55 91 9213-2545</li>
+                        <li><strong>Prazo de resposta:</strong> até 15 dias úteis</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="section" id="section5">
-                <h2>5. Compartilhamento de Informações</h2>
-                
-                <h3>5.1 Não Vendemos Seus Dados</h3>
-                <p><strong>Nunca vendemos, alugamos ou comercializamos suas informações pessoais com terceiros.</strong></p>
+            <div class="section">
+                <h2>9. Cookies e Tecnologias</h2>
+                <p>Utilizamos cookies e tecnologias similares para melhorar sua experiência:</p>
 
-                <h3>5.2 Compartilhamento Autorizado</h3>
+                <h3>9.1 Tipos de Cookies</h3>
                 <ul>
-                    <li><strong>Prestadores de serviços:</strong> empresas que nos ajudam a operar</li>
-                    <li><strong>Parceiros comerciais:</strong> quando necessário para serviços solicitados</li>
-                    <li><strong>Exigências legais:</strong> quando requerido por lei ou autoridades</li>
-                    <li><strong>Proteção de direitos:</strong> para proteger nossos direitos e segurança</li>
+                    <li><strong>Essenciais:</strong> Necessários para funcionamento básico</li>
+                    <li><strong>Analytics:</strong> Google Analytics para métricas de uso</li>
+                    <li><strong>Marketing:</strong> Facebook Pixel para campanhas</li>
+                    <li><strong>Funcionais:</strong> Preferências e configurações</li>
+                </ul>
+
+                <p>Você pode gerenciar cookies através das configurações do seu navegador.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Menores de Idade</h2>
+                <p>Nossos serviços são adequados para <strong>todas as idades</strong>. Para menores de 18 anos:</p>
+                
+                <ul>
+                    <li>Menores de 13 anos: Consentimento obrigatório dos responsáveis</li>
+                    <li>Entre 13-18 anos: Consentimento dos responsáveis recomendado</li>
+                    <li>Coleta mínima de dados necessários</li>
+                    <li>Maior proteção e cuidados especiais</li>
                 </ul>
             </div>
 
-            <div class="section" id="section6">
-                <h2>6. Cookies e Tecnologias de Rastreamento</h2>
-                
-                <h3>6.1 Tipos de Cookies</h3>
-                <ul>
-                    <li><strong>Essenciais:</strong> necessários para funcionamento básico</li>
-                    <li><strong>Performance:</strong> coletam informações sobre uso</li>
-                    <li><strong>Funcionalidade:</strong> lembram preferências</li>
-                    <li><strong>Marketing:</strong> personalizam anúncios e conteúdo</li>
-                </ul>
-
-                <p>Você pode controlar os cookies através das configurações do seu navegador.</p>
-            </div>
-
-            <div class="section" id="section7">
-                <h2>7. Segurança dos Dados</h2>
-                <p>Implementamos medidas técnicas e organizacionais para proteger suas informações:</p>
-                
-                <div class="highlight">
-                    <ul>
-                        <li>Criptografia de dados em trânsito e em repouso</li>
-                        <li>Controles de acesso rigorosos</li>
-                        <li>Monitoramento regular de segurança</li>
-                        <li>Treinamento de funcionários</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section" id="section8">
-                <h2>8. Retenção de Dados</h2>
-                <p>Mantemos suas informações apenas pelo tempo necessário para as finalidades descritas:</p>
+            <div class="section">
+                <h2>11. Alterações na Política</h2>
+                <p>Esta política pode ser atualizada periodicamente. Quando isso acontecer:</p>
                 
                 <ul>
-                    <li><strong>Dados de conta:</strong> enquanto ativa + 5 anos após inativação</li>
-                    <li><strong>Dados de transação:</strong> 10 anos (legislação fiscal)</li>
-                    <li><strong>Dados de marketing:</strong> até retirada do consentimento</li>
-                    <li><strong>Logs de acesso:</strong> 6 meses</li>
+                    <li>Notificaremos por e-mail e no aplicativo</li>
+                    <li>Destacaremos as principais mudanças</li>
+                    <li>Daremos tempo para revisão antes da vigência</li>
+                    <li>A data de atualização será sempre indicada</li>
                 </ul>
             </div>
 
-            <div class="section" id="section9">
-                <h2>9. Seus Direitos</h2>
-                <p>De acordo com a LGPD, você tem os seguintes direitos:</p>
-                
-                <h3>9.1 Direitos Básicos</h3>
-                <ul>
-                    <li><strong>Confirmação:</strong> saber se tratamos seus dados</li>
-                    <li><strong>Acesso:</strong> obter cópia dos seus dados</li>
-                    <li><strong>Correção:</strong> corrigir dados incorretos</li>
-                    <li><strong>Eliminação:</strong> excluir dados desnecessários</li>
-                    <li><strong>Portabilidade:</strong> receber dados em formato estruturado</li>
-                </ul>
-
-                <div class="highlight">
-                    <h3>Como Exercer Seus Direitos</h3>
-                    <p><strong>E-mail:</strong> [email-privacidade@empresa.com]</p>
-                    <p><strong>Telefone:</strong> [número de telefone]</p>
-                    <p><strong>Prazo de resposta:</strong> até 15 dias</p>
-                </div>
-            </div>
-
-            <div class="section" id="section10">
-                <h2>10. Dados de Menores de Idade</h2>
-                <p>Não coletamos intencionalmente informações de menores de 13 anos. Para menores entre 13 e 18 anos, exigimos consentimento dos pais ou responsáveis legais.</p>
-                
-                <p>Se você é responsável e acredita que seu filho nos forneceu informações pessoais, entre em contato conosco imediatamente.</p>
-            </div>
-
-            <div class="section" id="section11">
-                <h2>11. Transferência Internacional de Dados</h2>
-                <p>Quando transferimos dados para outros países, garantimos:</p>
+            <div class="section">
+                <h2>12. Transferência Internacional</h2>
+                <p>Alguns de nossos parceiros tecnológicos (Facebook, Google) podem processar dados fora do Brasil. Quando isso ocorrer:</p>
                 
                 <ul>
-                    <li>Grau de proteção adequado no país de destino</li>
-                    <li>Cláusulas contratuais padrão aprovadas</li>
-                    <li>Certificações internacionais de proteção</li>
-                    <li>Salvaguardas apropriadas implementadas</li>
+                    <li>Garantimos adequado nível de proteção</li>
+                    <li>Utilizamos cláusulas contratuais padrão</li>
+                    <li>Implementamos salvaguardas adicionais</li>
+                    <li>Limitamos o acesso ao mínimo necessário</li>
                 </ul>
             </div>
 
-            <div class="section" id="section12">
-                <h2>12. Alterações nesta Política</h2>
-                <p>Podemos atualizar esta política periodicamente. Notificaremos você através de:</p>
+            <div class="section">
+                <h2>13. Autoridade Fiscalizadora</h2>
+                <p>Você pode apresentar reclamações à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>:</p>
                 
-                <ul>
-                    <li>E-mail para o endereço cadastrado</li>
-                    <li>Aviso destacado em nosso site/aplicativo</li>
-                    <li>Notificação push (usuários do aplicativo)</li>
-                </ul>
-            </div>
-
-            <div class="section" id="section13">
-                <h2>13. Encarregado de Dados (DPO)</h2>
-                <p>Nosso Encarregado de Proteção de Dados é responsável por orientar funcionários, atender solicitações e interagir com a ANPD.</p>
-                
-                <div class="contact-info">
-                    <h3>Contato do Encarregado</h3>
-                    <p><strong>Nome:</strong> [Nome do DPO]</p>
-                    <p><strong>E-mail:</strong> [dpo@empresa.com]</p>
-                    <p><strong>Telefone:</strong> [telefone do DPO]</p>
-                </div>
-            </div>
-
-            <div class="section" id="section14">
-                <h2>14. Autoridade de Proteção de Dados</h2>
-                <p>Você tem o direito de apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
-                
-                <ul>
-                    <li><strong>Site:</strong> https://www.gov.br/anpd/</li>
-                    <li><strong>E-mail:</strong> comunicacao@anpd.gov.br</li>
-                </ul>
-            </div>
-
-            <div class="section" id="section15">
-                <h2>15. Informações de Contato</h2>
-                <p>Para questões sobre esta Política de Privacidade:</p>
-                
-                <div class="contact-info">
-                    <h3>[NOME DA EMPRESA]</h3>
-                    <p><strong>Endereço:</strong> [Endereço completo]</p>
-                    <p><strong>E-mail:</strong> [contato@empresa.com]</p>
-                    <p><strong>Telefone:</strong> [telefone]</p>
-                    <p><strong>CNPJ:</strong> [número do CNPJ]</p>
+                <div class="contact-card">
+                    <h3>Contato da ANPD</h3>
+                    <div class="contact-item"><strong>Website:</strong> https://www.gov.br/anpd/</div>
+                    <div class="contact-item"><strong>E-mail:</strong> comunicacao@anpd.gov.br</div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>Esta Política de Privacidade foi elaborada em conformidade com a Lei Geral de Proteção de Dados (LGPD) e outras legislações aplicáveis.</p>
+            <p><strong>Sollaris Energia</strong> - Comprometida com a proteção dos seus dados</p>
+            <p>Esta política foi elaborada em conformidade com a LGPD e diretrizes da Meta/Facebook</p>
+            <p>© 2025 Sollaris Energia. Todos os direitos reservados.</p>
         </div>
     </div>
 
     <script>
-        // Indicador de progresso de scroll
+        // Barra de progresso do scroll
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
             const scrollProgress = (scrolled / maxScroll) * 100;
-            document.getElementById('scrollIndicator').style.width = scrollProgress + '%';
+            document.getElementById('scrollProgress').style.width = scrollProgress + '%';
         });
 
-        // Smooth scroll para links do índice
-        document.querySelectorAll('.toc a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Efeito de hover nas seções
-        document.querySelectorAll('.section').forEach(section => {
-            section.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px)';
-            });
-            
-            section.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Animação de entrada para seções quando ficam visíveis
+        // Animação de entrada para seções
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -557,13 +621,29 @@
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
+        // Aplicar animação inicial
         document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease-out';
             observer.observe(section);
+        });
+
+        // Smooth hover effects
+        document.querySelectorAll('.section, .contact-card, .facebook-requirements').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
         });
     </script>
 </body>
