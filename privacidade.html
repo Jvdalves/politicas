@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(248, 250, 252, 0.8);
+            border-radius: 15px;
+            border-left: 4px solid #4facfe;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2d3748;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .section h3 {
+            color: #4a5568;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .section li::before {
+            content: "→";
+            color: #4facfe;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 400% 400%;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: white !important;
+            margin-bottom: 15px;
+        }
+
+        .toc {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .toc h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .toc a {
+            color: #4facfe;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #2d3748;
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            background: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Política de Privacidade</h1>
+            <p>Transparência e proteção dos seus dados pessoais</p>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Última atualização:</strong> [Data da última atualização]
+            </div>
+
+            <div class="toc">
+                <h3>Índice</h3>
+                <a href="#section1">1. Informações Gerais</a>
+                <a href="#section2">2. Informações que Coletamos</a>
+                <a href="#section3">3. Como Utilizamos Suas Informações</a>
+                <a href="#section4">4. Base Legal para Tratamento</a>
+                <a href="#section5">5. Compartilhamento de Informações</a>
+                <a href="#section6">6. Cookies e Tecnologias</a>
+                <a href="#section7">7. Segurança dos Dados</a>
+                <a href="#section8">8. Retenção de Dados</a>
+                <a href="#section9">9. Seus Direitos</a>
+                <a href="#section10">10. Dados de Menores</a>
+                <a href="#section11">11. Transferência Internacional</a>
+                <a href="#section12">12. Alterações na Política</a>
+                <a href="#section13">13. Encarregado de Dados</a>
+                <a href="#section14">14. Autoridade de Proteção</a>
+                <a href="#section15">15. Contato</a>
+            </div>
+
+            <div class="section" id="section1">
+                <h2>1. Informações Gerais</h2>
+                <p>Esta Política de Privacidade descreve como <strong>[NOME DA EMPRESA/APLICATIVO]</strong> ("nós", "nosso" ou "empresa") coleta, usa, armazena e protege suas informações pessoais quando você utiliza nosso site <strong>[URL DO SITE]</strong> e/ou aplicativo móvel (coletivamente, os "Serviços").</p>
+                
+                <div class="highlight">
+                    <p><strong>Importante:</strong> Ao utilizar nossos Serviços, você concorda com a coleta e uso de informações de acordo com esta política. Esta Política de Privacidade está em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+                </div>
+            </div>
+
+            <div class="section" id="section2">
+                <h2>2. Informações que Coletamos</h2>
+                
+                <h3>2.1 Informações Fornecidas Diretamente por Você</h3>
+                <ul>
+                    <li><strong>Dados de cadastro:</strong> nome, e-mail, telefone, endereço</li>
+                    <li><strong>Dados de perfil:</strong> foto, preferências, configurações da conta</li>
+                    <li><strong>Informações de contato:</strong> mensagens enviadas através de formulários</li>
+                    <li><strong>Dados de pagamento:</strong> informações processadas por terceiros seguros</li>
+                </ul>
+
+                <h3>2.2 Informações Coletadas Automaticamente</h3>
+                <ul>
+                    <li><strong>Dados de uso:</strong> páginas visitadas, tempo de permanência, interações</li>
+                    <li><strong>Informações do dispositivo:</strong> tipo, sistema operacional, navegador, IP</li>
+                    <li><strong>Dados de localização:</strong> localização aproximada (quando autorizado)</li>
+                    <li><strong>Cookies:</strong> identificadores para melhorar a experiência</li>
+                </ul>
+
+                <h3>2.3 Informações de Terceiros</h3>
+                <ul>
+                    <li><strong>Redes sociais:</strong> conexão com Facebook, Google, etc.</li>
+                    <li><strong>Parceiros comerciais:</strong> informações de parceiros autorizados</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section3">
+                <h2>3. Como Utilizamos Suas Informações</h2>
+                
+                <h3>3.1 Prestação de Serviços</h3>
+                <ul>
+                    <li>Fornecer, operar e manter nossos Serviços</li>
+                    <li>Processar transações e pedidos</li>
+                    <li>Gerenciar sua conta e preferências</li>
+                    <li>Fornecer suporte ao cliente</li>
+                </ul>
+
+                <h3>3.2 Comunicação</h3>
+                <ul>
+                    <li>Enviar atualizações sobre nossos Serviços</li>
+                    <li>Responder às suas solicitações e dúvidas</li>
+                    <li>Enviar newsletters (com seu consentimento)</li>
+                    <li>Notificações importantes sobre mudanças</li>
+                </ul>
+
+                <h3>3.3 Melhoria dos Serviços</h3>
+                <ul>
+                    <li>Analisar o uso para melhorias</li>
+                    <li>Desenvolver novos recursos</li>
+                    <li>Realizar pesquisas de mercado</li>
+                    <li>Personalizar sua experiência</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section4">
+                <h2>4. Base Legal para o Tratamento de Dados</h2>
+                <p>Tratamos seus dados pessoais com base nas seguintes hipóteses legais previstas na LGPD:</p>
+                
+                <div class="highlight">
+                    <ul>
+                        <li><strong>Consentimento:</strong> quando você nos autoriza expressamente</li>
+                        <li><strong>Execução de contrato:</strong> para cumprir contratos firmados</li>
+                        <li><strong>Interesse legítimo:</strong> para melhorar serviços e segurança</li>
+                        <li><strong>Cumprimento de obrigação legal:</strong> quando exigido por lei</li>
+                        <li><strong>Exercício de direitos:</strong> em processos judiciais</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" id="section5">
+                <h2>5. Compartilhamento de Informações</h2>
+                
+                <h3>5.1 Não Vendemos Seus Dados</h3>
+                <p><strong>Nunca vendemos, alugamos ou comercializamos suas informações pessoais com terceiros.</strong></p>
+
+                <h3>5.2 Compartilhamento Autorizado</h3>
+                <ul>
+                    <li><strong>Prestadores de serviços:</strong> empresas que nos ajudam a operar</li>
+                    <li><strong>Parceiros comerciais:</strong> quando necessário para serviços solicitados</li>
+                    <li><strong>Exigências legais:</strong> quando requerido por lei ou autoridades</li>
+                    <li><strong>Proteção de direitos:</strong> para proteger nossos direitos e segurança</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section6">
+                <h2>6. Cookies e Tecnologias de Rastreamento</h2>
+                
+                <h3>6.1 Tipos de Cookies</h3>
+                <ul>
+                    <li><strong>Essenciais:</strong> necessários para funcionamento básico</li>
+                    <li><strong>Performance:</strong> coletam informações sobre uso</li>
+                    <li><strong>Funcionalidade:</strong> lembram preferências</li>
+                    <li><strong>Marketing:</strong> personalizam anúncios e conteúdo</li>
+                </ul>
+
+                <p>Você pode controlar os cookies através das configurações do seu navegador.</p>
+            </div>
+
+            <div class="section" id="section7">
+                <h2>7. Segurança dos Dados</h2>
+                <p>Implementamos medidas técnicas e organizacionais para proteger suas informações:</p>
+                
+                <div class="highlight">
+                    <ul>
+                        <li>Criptografia de dados em trânsito e em repouso</li>
+                        <li>Controles de acesso rigorosos</li>
+                        <li>Monitoramento regular de segurança</li>
+                        <li>Treinamento de funcionários</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" id="section8">
+                <h2>8. Retenção de Dados</h2>
+                <p>Mantemos suas informações apenas pelo tempo necessário para as finalidades descritas:</p>
+                
+                <ul>
+                    <li><strong>Dados de conta:</strong> enquanto ativa + 5 anos após inativação</li>
+                    <li><strong>Dados de transação:</strong> 10 anos (legislação fiscal)</li>
+                    <li><strong>Dados de marketing:</strong> até retirada do consentimento</li>
+                    <li><strong>Logs de acesso:</strong> 6 meses</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section9">
+                <h2>9. Seus Direitos</h2>
+                <p>De acordo com a LGPD, você tem os seguintes direitos:</p>
+                
+                <h3>9.1 Direitos Básicos</h3>
+                <ul>
+                    <li><strong>Confirmação:</strong> saber se tratamos seus dados</li>
+                    <li><strong>Acesso:</strong> obter cópia dos seus dados</li>
+                    <li><strong>Correção:</strong> corrigir dados incorretos</li>
+                    <li><strong>Eliminação:</strong> excluir dados desnecessários</li>
+                    <li><strong>Portabilidade:</strong> receber dados em formato estruturado</li>
+                </ul>
+
+                <div class="highlight">
+                    <h3>Como Exercer Seus Direitos</h3>
+                    <p><strong>E-mail:</strong> [email-privacidade@empresa.com]</p>
+                    <p><strong>Telefone:</strong> [número de telefone]</p>
+                    <p><strong>Prazo de resposta:</strong> até 15 dias</p>
+                </div>
+            </div>
+
+            <div class="section" id="section10">
+                <h2>10. Dados de Menores de Idade</h2>
+                <p>Não coletamos intencionalmente informações de menores de 13 anos. Para menores entre 13 e 18 anos, exigimos consentimento dos pais ou responsáveis legais.</p>
+                
+                <p>Se você é responsável e acredita que seu filho nos forneceu informações pessoais, entre em contato conosco imediatamente.</p>
+            </div>
+
+            <div class="section" id="section11">
+                <h2>11. Transferência Internacional de Dados</h2>
+                <p>Quando transferimos dados para outros países, garantimos:</p>
+                
+                <ul>
+                    <li>Grau de proteção adequado no país de destino</li>
+                    <li>Cláusulas contratuais padrão aprovadas</li>
+                    <li>Certificações internacionais de proteção</li>
+                    <li>Salvaguardas apropriadas implementadas</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section12">
+                <h2>12. Alterações nesta Política</h2>
+                <p>Podemos atualizar esta política periodicamente. Notificaremos você através de:</p>
+                
+                <ul>
+                    <li>E-mail para o endereço cadastrado</li>
+                    <li>Aviso destacado em nosso site/aplicativo</li>
+                    <li>Notificação push (usuários do aplicativo)</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section13">
+                <h2>13. Encarregado de Dados (DPO)</h2>
+                <p>Nosso Encarregado de Proteção de Dados é responsável por orientar funcionários, atender solicitações e interagir com a ANPD.</p>
+                
+                <div class="contact-info">
+                    <h3>Contato do Encarregado</h3>
+                    <p><strong>Nome:</strong> [Nome do DPO]</p>
+                    <p><strong>E-mail:</strong> [dpo@empresa.com]</p>
+                    <p><strong>Telefone:</strong> [telefone do DPO]</p>
+                </div>
+            </div>
+
+            <div class="section" id="section14">
+                <h2>14. Autoridade de Proteção de Dados</h2>
+                <p>Você tem o direito de apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+                
+                <ul>
+                    <li><strong>Site:</strong> https://www.gov.br/anpd/</li>
+                    <li><strong>E-mail:</strong> comunicacao@anpd.gov.br</li>
+                </ul>
+            </div>
+
+            <div class="section" id="section15">
+                <h2>15. Informações de Contato</h2>
+                <p>Para questões sobre esta Política de Privacidade:</p>
+                
+                <div class="contact-info">
+                    <h3>[NOME DA EMPRESA]</h3>
+                    <p><strong>Endereço:</strong> [Endereço completo]</p>
+                    <p><strong>E-mail:</strong> [contato@empresa.com]</p>
+                    <p><strong>Telefone:</strong> [telefone]</p>
+                    <p><strong>CNPJ:</strong> [número do CNPJ]</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Esta Política de Privacidade foi elaborada em conformidade com a Lei Geral de Proteção de Dados (LGPD) e outras legislações aplicáveis.</p>
+        </div>
+    </div>
+
+    <script>
+        // Indicador de progresso de scroll
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = (scrolled / maxScroll) * 100;
+            document.getElementById('scrollIndicator').style.width = scrollProgress + '%';
+        });
+
+        // Smooth scroll para links do índice
+        document.querySelectorAll('.toc a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efeito de hover nas seções
+        document.querySelectorAll('.section').forEach(section => {
+            section.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px)';
+            });
+            
+            section.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Animação de entrada para seções quando ficam visíveis
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
